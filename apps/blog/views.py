@@ -6,9 +6,11 @@ from .forms import PostForm
 def index(request):
     
     all_posts = Post.objects.all()
+    quantity_posts = all_posts.count()
     
     context = {
         'all_posts': all_posts,
+        'quantity_posts': quantity_posts,
         'created_form': PostForm(),
     }
     
