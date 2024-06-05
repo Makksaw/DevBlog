@@ -1,0 +1,21 @@
+{% load static %}
+
+<div class="navbar bg-base-300">
+    <div class="container mx-auto">
+      <div class="navbar-start">
+        <a class="btn btn-ghost text-xl" href="{% url 'main:index' %}">
+          DEVBLOG
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="{% url 'main:lol' %}">lol</a></li>
+          <li><a href="{% url 'main:about' %}">about</a></li>
+          <li><a href="{% url 'blog:index' %}">blog</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <a class="btn">Button</a>
+      </div>
+    </div>
+</div>
